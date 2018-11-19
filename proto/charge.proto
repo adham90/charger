@@ -1,0 +1,12 @@
+syntax = "proto3";
+package charge;
+
+service UrlChargeService {
+    rpc charge(ChargeRequest) returns (ChargeResponse) {}
+}
+message ChargeRequest {
+    string url = 1;
+}
+message ChargeResponse {
+    string url = 1;
+}
